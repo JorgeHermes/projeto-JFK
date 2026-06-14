@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <link rel="shortcut icon" href="favicon.ico" type="image/x-icon">
+    <title>Pagamento – JFK Pacotes Turísticos</title>
+</head>
+<body>
+
+    <header>
+        <h1><a href="index.html" style="color:white;text-decoration:none;">JFK</a></h1>
+    </header>
+
+    <main class="form-main">
+        <div class="form-container form-largo">
+            <h2>Informações de Pagamento</h2>
+            <p class="form-subtitulo">Insira os dados do seu cartão para finalizar a compra</p>
+
+            <div class="resumo-pedido">
+                <h3>Resumo do pedido</h3>
+                <div class="resumo-linha">
+                    <span>Pacote selecionado</span>
+                    <span>Toscana, Itália – 7 dias</span>
+                </div>
+                <div class="resumo-linha">
+                    <span>Nº de pessoas</span>
+                    <span>2 pessoas</span>
+                </div>
+                <div class="resumo-linha total">
+                    <span>Total</span>
+                    <span>R$ 17.980,00</span>
+                </div>
+            </div>
+
+            <h3 style="margin:20px 0 10px;">Dados do cartão</h3>
+
+            <div class="form-group">
+                <label for="nome-cartao">Nome no cartão</label>
+                <input type="text" id="nome-cartao" placeholder="Como está escrito no cartão">
+            </div>
+
+            <div class="form-group">
+                <label for="numero-cartao">Número do cartão</label>
+                <input type="text" id="numero-cartao" placeholder="0000 0000 0000 0000" maxlength="19">
+            </div>
+
+            <div class="form-row">
+                <div class="form-group">
+                    <label for="validade">Validade</label>
+                    <input type="text" id="validade" placeholder="MM/AA" maxlength="5">
+                </div>
+                <div class="form-group">
+                    <label for="cvv">CVV</label>
+                    <input type="text" id="cvv" placeholder="000" maxlength="3">
+                </div>
+            </div>
+
+            <div class="form-group">
+                <label for="parcelas">Parcelamento</label>
+                <select id="parcelas">
+                    <option>À vista – R$ 17.980,00</option>
+                    <option>2x de R$ 8.990,00 sem juros</option>
+                    <option>3x de R$ 5.993,33 sem juros</option>
+                    <option>6x de R$ 2.996,67 sem juros</option>
+                    <option>10x de R$ 1.798,00 sem juros</option>
+                    <option>12x de R$ 1.498,33 sem juros</option>
+                </select>
+            </div>
+
+            <a href="confirmacao.html"><button class="btn-comprar" style="width:100%;margin-top:10px;">Finalizar compra</button></a>
+
+            <p style="text-align:center;margin-top:15px;"><a href="index.html" class="link-voltar">← Voltar ao início</a></p>
+        </div>
+    </main>
+
+    <footer>
+        <p>Site criado por <a href="https://github.com/JorgeHermes">Hermes</a>.</p>
+    </footer>
+</body>
+</html>
